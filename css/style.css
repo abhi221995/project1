@@ -1,0 +1,2496 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "lora-semibold";
+    src: url("../Font/static/Lora-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "lora-medium";
+    src: url("../Font/static/Lora-Medium.ttf");
+}
+
+@font-face {
+    font-family: "lora-bold";
+    src: url("../Font/static/Lora-Bold.ttf");
+}
+
+@font-face {
+    font-family: "lora-regular";
+    src: url("../Font/static/Lora-Regular.ttf");
+}
+
+/* COMMON CLASS */
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+/* BANNER PART */
+
+.banner{
+    /* background-color: aquamarine; */
+    background-color: black;
+    width: 100%;
+    height: 778px;
+    position: relative;
+}
+
+.mainlogopart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    top: 4%;
+    z-index: 5;
+}
+
+.logo1 img{
+    width: 102px;
+    height: 92px;
+}
+
+.logo2 img{
+    width: 231px;
+    height: 169px; 
+}
+
+.bannerbody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+}
+
+.bannerLeft{
+    /* background-color: black; */
+    width: 30%;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center; 
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    z-index: 10;
+
+}
+
+.bannerLeft h3{
+    font-family: "lora-semibold",sans-serif;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 0 #C5A481;
+}
+
+.bannerLeft h1{
+    font-family: "lora-semibold",sans-serif;
+    font-size: 70px;
+    color: #C5A481;
+}
+
+.bannerRight{
+    width: 70%;
+    height: 778px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.bannerRight .bannerHorse img{
+    height: 778px;
+}
+
+/* banner upper */
+.bannerupper{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.logo3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid goldenrod;
+    padding: 5px 15px;
+}
+
+.logo4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.logo_text{
+    text-align: center;
+}
+
+.logo_text .p3,.p4{
+    color: white;
+}
+
+
+/* banner lower */
+.bannerlower{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerlower .div1{
+    width: 231px;
+    height: 59px;
+    border: 1px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerlower .div2{
+    width: 216px;
+    height: 44px;
+    border: 1px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerlower .p1{
+    color: white;
+}
+
+.banner_lower_lowerpart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.banner_lower_lowerpart .p2{
+    font-family: "lora-medium",sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+.bannerLower_left div{
+    padding: 5px 10px;
+    border-right: 1px solid goldenrod;
+}
+
+.bannerLower_right div{
+    padding: 5px 10px;
+}
+
+
+/* NAV PART */
+
+.navpart{
+ 
+    padding-left: 176px;
+    padding-right: 176px;
+}
+
+.navitem{
+    /* width: 100%; */
+    height: 150px;
+    /* padding-left: 176px;
+    padding-right: 176px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlist{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.navlist li a{
+    font-family: "lora-bold",sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+
+/* HORSE RACING PART */
+.horseracing_part{
+    height: 771px;
+    background-image: linear-gradient(rgba(58, 57, 57, 0.5),rgba(58, 57, 57,0.5),rgba(58, 57, 57,0.5)) , url(../Images/horseracing\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+/* 
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.horseracing{
+    background-image: linear-gradient(rgba(58, 57, 57, 0.3),rgba(58, 57, 57,0.3));
+    width: 95%;
+    /* height: 600px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.horseracing_left{
+    width: 40%;
+}
+
+.racingImg img{
+    height: 400px;
+}
+
+.horseracing_right{
+    width: 45%;
+    padding: 0px 10px;
+}
+
+.horseracing_right h5{
+    font-family: "lora-semibold",sans-serif;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.horseracing_right h3{
+    font-family: "lora-semibold",sans-serif;
+    font-size: 25px;
+    color: #C5A481;
+
+    margin-bottom: 30px;
+}
+
+.horseracing_right .p5{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.king{
+    color: #C5A481;  
+}
+
+.horseracing_right .p6{
+    color: #C5A481;
+}
+
+/* LEGACY PART */
+
+
+
+/* ....... */
+
+.legacy_part{
+    background-image: linear-gradient(to left,gray,black);
+    padding-top: 20px;
+}
+
+.legacy_heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.legacy_heading h3{
+    color: white;
+    text-transform: uppercase;
+    font-family: "lora-semibold",sans-serif;
+
+}
+
+.legacy_heading h2{
+    color: #C5A481;
+    text-transform: uppercase;
+    font-family: "lora-semibold",sans-serif;
+}
+
+.legacy_detail{
+    height: 700px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+position: relative;
+display: flex;
+justify-content: space-between;
+
+}
+
+.legacy_text{
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: black;
+    height: 440px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.legacyImg{
+    position: absolute; 
+    bottom: 0%;
+    top: 5%;
+    height: 500px;
+}
+
+.text{
+    width: 600px;
+    padding: 20px;
+}
+
+.legacy_text .p7{
+    color: #C5A481;
+    margin-bottom: 15px;
+}
+
+.legacy_text .p8{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.legacy_button button{
+    background-color: transparent;
+    border: none;
+    
+}
+
+.legacy_button button a{
+    color: #C5A481;
+} 
+
+/* LEGACY_DETAIL 2 */
+
+.legacy_detail2{
+    height: 700px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.legacy_text2{
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    /* right: 20%; */
+    background-color: black;
+    height: 440px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.legacyImg2{
+    position: absolute; 
+    /* bottom: 0%; */
+    top: 5%;
+    right: 0%;
+    height: 500px;
+}
+
+
+.legacy_text2 .p7{
+    color: #C5A481;
+    margin-bottom: 15px;
+}
+
+.legacy_text2 .p8{
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* LEGACY DETAIL 3 */
+.legacy_detail3{
+    height: 700px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    position: relative;
+
+}
+
+
+.legacy_text3{
+    width: 80%;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    background-color: black;
+    height: 440px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.legacyImg3{
+    position: absolute; 
+    top: 0%;
+    left: 0%;
+    height: 500px;
+    
+}
+
+.text3{
+    width: 600px;
+    padding: 20px;
+}
+
+.legacy_text3 .p7{
+    color: #C5A481;
+    margin-bottom: 15px;
+}
+
+.legacy_text3 .p8{
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* LEGACY DETAIL 4 */
+.legacy_detail4{
+    height: 700px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.legacy_text4{
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    background-color: black;
+    height: 440px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.legacyImg4{
+    height: 500px;
+    position: absolute; 
+    top: 5%;
+    right: 0%;
+    /* height: 500px; */
+}
+
+.text4{
+    width: 300px;
+}
+
+.legacy_text4 .p7{
+    color: #C5A481;
+    margin-bottom: 15px;
+}
+
+.legacy_text4 .p8{
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* WINNING HISTORY PART */
+
+.winning_history{
+    background-image: linear-gradient(rgba(58, 57, 57,0.3),rgba(58, 57, 57,0.3)),url(../Images/winning\ hist\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 800px; */
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.history_heading{
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.hist_heading{
+    width: 50%;
+    text-align: center;
+}
+
+.history_heading h3{
+    color: #C5A481;
+    font-size: 30px;
+    text-shadow: 2px 2px 0px rgb(95, 95, 94);
+    font-family: "lora-semibold",sans-serif;
+    margin-bottom: 20px;
+}
+
+.history_heading .p9{
+    color: white;
+    font-size: 20px;
+}
+
+.winner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.winner_horse_detail{
+    position: relative;
+    padding: 10px;
+}
+
+.winner_detail_text{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #C5A481;
+    width: 80%;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner_detail_text h6{
+    color: white;
+    margin-bottom: 10px;
+    font-family: "lora-medium",sans-serif;
+    font-size: 20px;
+}
+
+.winner_detail_text .p11{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hist_btn button{
+    width: 156px;
+    height: 43px;
+    background-color: rgba(60, 59, 59, 0.3);
+    border: 1px solid #C5A481;
+}
+
+.hist_btn button a{
+    color: white;
+    font-family: "lora-semibold",sans-serif;
+    font-size: 13px;
+}
+
+/* PRESTIGIOUS PART */
+
+.prestigious_part{
+    background-image: linear-gradient(to left, gray,black);
+    /* height: 800px; */
+}
+
+.prestigious{
+    height: 900px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.pres_shoes{
+    /* width: 500px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+}
+
+.shoe_type{
+    width: 30%;
+}
+
+.pres_text{
+    background-color: black;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 30px;
+    position: absolute;
+    top: 05;
+}
+
+.pres_text_heading{
+    width: 200px;
+}
+
+.pres_text_heading .p12{
+    color: white;
+    margin-bottom: 8px;
+}
+
+.pres_text_heading .p13{
+    color: #C5A481;
+    margin-bottom: 20px;
+}
+
+.pres_text_heading .p14{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.pres_btn button{
+    background-color: transparent;
+    border: none;
+}
+
+.pres_btn button a{
+    color: #C5A481;
+}
+
+
+/* NEWS PART */
+
+.news{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.news_heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news_heading h3{
+    color: #C5A481;
+    font-family: "lora-semibold",sans-serif;
+    font-size: 36px;
+}
+
+.news_type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news_detail{
+    padding: 5px;
+}
+
+.news_detail .news_text .p15{
+    color: #C5A481;
+}
+
+/* GALLERY PART */
+
+.gallery_part{
+    background-image: linear-gradient(to left, black,gray);
+}
+.gallery{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.gallery_heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.gallery_heading_text{
+    width: 60%;
+    text-align: center;
+}
+
+.gallery_heading_text h3{
+    font-family: "lora-semibold",sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #C5A481;
+}
+
+.gallery_heading_text .p16{
+    color: white;
+}
+
+.gallery_Imagepart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+}
+
+.gallery_Imagepart .Image1,.Image2,.Image3,.Image4{
+    padding: 0px 5px;
+}
+
+.gallery_btn{
+    text-align: center;
+}
+
+.gallery_btn button{
+    width: 196px;
+    height: 43px;
+    background-color: black;
+    border: 1px solid #C5A481;
+    margin-top: 30px;
+}
+
+.gallery_btn button a{
+    color: white;
+}
+
+
+/* TESTIMONIAL PART */
+
+.testimonial_part{
+    background-image: linear-gradient(to left,gray,black);
+    border-top: 1px solid #C5A481;
+    border-bottom: 1px solid #C5A481;
+}
+
+.testimonial{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.testimonial .testi{
+    padding: 10px;
+}
+
+/* FOOTER PART */
+
+.footerpart{
+    /* background-color: aquamarine; */
+    background-image: linear-gradient(to left,black,gray);
+    border-top: 2px solid #C5A481;
+    border-bottom: 2px solid #C5A481;
+}
+
+.footerItem{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footerItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.footer_logo{
+    width: 103px;
+    height: 91px;
+}
+
+.footer_text .p17{
+    color: white;
+
+}
+
+.footer_text .p18{
+    color: white;
+    font-size: 12px;
+    
+}
+
+.footer_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.footerlist ul{
+    list-style-type: none;
+}
+
+.footerlist ul li a{
+    color: white;
+    font-size: 14px;
+}
+
+.footer_content h4{
+    color: #C5A481;
+    font-family: "lora-regular",sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.footer_content{
+    padding: 8px;
+}
+
+/* FOOTER LAST PART */
+
+.footerLast_part{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-top: 1px solid #C5A481;
+    padding-top: 20px;
+}
+
+.footerLast_text .p19,.p20{
+    color: white;
+}
+
+.footerLast_list ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footerLast_list ul li a{
+    color: white;
+}
+
+.footerLast_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.f_icon{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.f_icon p{
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------RESPONSIVE PART-------------- */
+
+@media screen and (max-width:1440px) {
+    /* BANNER PART */
+    .banner{
+        height: 778px;
+    }
+    .bannerLeft h3{
+        font-size: 40px;
+    }
+    
+    .bannerLeft h1{
+        font-size: 55px;
+    }
+
+    /* NAV PART */
+
+    .navpart{
+ 
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* HORSE RACING PART */
+
+
+    .horseracing{
+        width: 100%;
+        padding-top: 50px;
+        /* height: 580px; */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .racingImg img{
+        height: 400px;
+    }
+
+    /* LEGECY PART */
+
+    .text{
+        width: 300px;
+        padding: 20px;
+    }
+
+    /* LEGACY DETAIL 4 */
+
+    .legacy_detail4{
+        height: 700px;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        position: relative;
+    }
+    
+    .legacy_text4{
+        width: 80%;
+        position: absolute;
+        top: 15%;
+        background-color: black;
+        height: 390px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .legacyImg4{
+        height: 400px;
+        position: absolute; 
+        top: 5%;
+        right: 0%;
+        /* height: 500px; */
+    }
+    
+    .text4{
+        width: 300px;
+    }
+
+    /* WINNING HISTORY PART */
+
+    .winner_detail_text{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid #C5A481;
+        width: 80%;
+        height: 650px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .winner_horse_detail img{
+        height: 690px;
+    }
+
+    /* PRESTIGIOUS PART */
+
+    .prestigious{
+        height: 700px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .pres_text{
+        width: 50%;
+        height: 350px;
+        padding: 30px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:1199px) {
+    /* BANNER PART */
+
+    .banner{
+        height: 630px;
+    }
+
+    .bannerLeft{
+        /* background-color: black; */
+        width: 35%;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center; 
+        position: absolute;
+        top: 30%;
+        left: 6%;
+        z-index: 10;
+    
+    }
+
+    .bannerLeft h3{
+        font-size: 30px;
+    }
+    
+    .bannerLeft h1{
+        font-size: 55px;
+    }
+    .bannerRight{
+        width: 65%;
+        height: 630px;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+    
+    .bannerRight .bannerHorse img{
+        height: 630px;
+    }
+
+    /* NAV PART */
+
+    .navpart{
+ 
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .navitem{
+        height: auto;
+        padding: 10px;
+    }
+
+    .navlist{
+        gap: 50px;
+    }
+    
+    .navlist li a{
+        font-size: 20px;
+    }
+
+     /* HORSE RACING PART */
+
+
+     .horseracing_part{
+        height: 560px;
+    }
+
+    .horseracing{
+        padding-top: 50px;
+        /* height: 530px; */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .racingImg img{
+        height: 350px;
+    }
+
+    /* LEGACY PART */
+
+
+    .legacy_text{
+        width: 80%;
+        position: absolute;
+        /* bottom: 5%; */
+        top: 20%;
+        left: 20%;
+        background-color: black;
+        height: 360px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    .legacyImg{
+        position: absolute; 
+        bottom: 0%;
+        top: 5%;
+        height: 400px;
+        /* z-index: 6; */
+    }
+
+    .legacy_detail{
+        height: 600px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    /* LEGACY DETAIL2 */
+
+    .legacy_detail2{
+        height: 600px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .legacy_text2{
+        width: 80%;
+        position: absolute;
+        top: 20%;
+        /* right: 20%; */
+        background-color: black;
+        height: 360px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .legacyImg2{
+        position: absolute; 
+        /* bottom: 0%; */
+        top: 5%;
+        right: 0%;
+        height: 400px;
+    }
+
+    /* LEGACY DETAIL 3 */
+    .legacy_detail3{
+        height: 600px;
+        padding-bottom: 50px;
+    }
+    .text3{
+        width: 300px;
+    }
+
+    /* LEGACY DETAIL 4 */
+
+    .legacy_detail4{
+        height: 450px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+    
+    .legacy_text4{
+        width: 80%;
+        position: absolute;
+        top: 15%;
+        background-color: black;
+        height: 300px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .legacyImg4{
+        height: 320px;
+        position: absolute; 
+        top: 5%;
+        right: 0%;
+        /* height: 500px; */
+    }
+    
+    .text4{
+        width: 260px;
+    }
+
+     /* WINNING HISTORY PART */
+
+     .winner_detail_text{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid #C5A481;
+        width: 80%;
+        height: 530px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* position: fixed; */
+    }
+
+    .winner_horse_detail img{
+        height: 560px;
+    }
+
+    /* PRESTIGIOUS PART */
+
+    .prestigious{
+        height: 600px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .pres_text{
+        width: 50%;
+        height: 330px;
+        padding: 30px;
+    }
+
+    /* FOOTER LAST PART */
+
+    .footerLast_list ul{
+        gap: 20px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:991px) {
+    /* BANNER PART */
+    .logo2 img{
+        width: 200px;
+        height: 139px; 
+    }
+
+     .banner{
+        height: 480px;
+    }
+
+    .bannerLeft{
+        /* background-color: black; */
+        width: 35%;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center; 
+        position: absolute;
+        top: 30%;
+        left: 6%;
+        z-index: 10;
+    
+    }
+
+    .bannerLeft h3{
+        font-size: 30px;
+    }
+    
+    .bannerLeft h1{
+        font-size: 40px;
+    }
+    .bannerRight{
+        width: 65%;
+        height: 480px;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+    
+    .bannerRight .bannerHorse img{
+        height: 480px;
+    }
+
+    /* banner lower */
+
+.bannerlower .div1{
+    width: 180px;
+    height: 49px;
+}
+
+.bannerlower .div2{
+    width: 165px;
+    height: 34px;
+}
+
+ /* HORSE RACING PART */
+
+
+ .horseracing_part{
+    height: 560px;
+}
+
+.horseracing{
+    padding-top: 50px;
+    /* height: 500px; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.racingImg img{
+    height: 350px;
+}
+
+.horseracing_right h3{
+    font-family: "lora-semibold",sans-serif;
+    font-size: 20px;
+}
+
+/* LEGACY PART */
+
+.legacy_part{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.legacy_text{
+    width: 80%;
+    position: absolute;
+    /* bottom: 5%; */
+    top: 20%;
+    left: 20%;
+    background-color: black;
+    height: 320px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.legacyImg{
+    position: absolute; 
+    bottom: 0%;
+    top: 5%;
+    height: 360px;
+    /* z-index: 6; */
+}
+
+.legacy_detail{
+    height: 600px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/* LEGACY DETAIL2 */
+
+.legacy_detail2{
+    height: 600px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.legacy_text2{
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    background-color: black;
+    height: 320px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.legacyImg2{
+    position: absolute; 
+    top: 5%;
+    right: 0%;
+    height: 360px;
+}
+
+/* LEGACY DETAIL 4 */
+
+.legacy_detail4{
+    height: 450px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.legacy_text4{
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    background-color: black;
+    height: 270px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.legacyImg4{
+    height: 280px;
+    position: absolute; 
+    top: 5%;
+    right: 0%;
+}
+
+.text4{
+    width: 260px;
+}
+
+ /* WINNING HISTORY PART */
+
+ .winning_history{
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+
+ .winner_detail_text{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #C5A481;
+    width: 80%;
+    height: 480px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+}
+
+.winner_horse_detail img{
+    height: 520px;
+}
+
+.winner_detail_text h6{
+    color: white;
+    margin-bottom: 10px;
+    font-family: "lora-medium",sans-serif;
+    font-size: 15px;
+}
+
+.winner_detail_text .p11{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hist_btn button{
+    width: 126px;
+    height: 33px;
+    background-color: rgba(60, 59, 59, 0.3);
+    border: 1px solid #C5A481;
+}
+
+/* PRESTIGIOUS PART */
+
+.prestigious_part{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.prestigious{
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.pres_shoes{
+    /* width: 500px; */
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+}
+
+.pres_text{
+    width: 50%;
+    height: 280px;
+    padding: 20px;
+}
+
+.pres_text_heading{
+    width: 200px;
+}
+
+.pres_text_heading .p12{
+    color: white;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.pres_text_heading .p13{
+    color: #C5A481;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.pres_text_heading .p14{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.pres_btn button{
+    background-color: transparent;
+    border: none;
+}
+
+.pres_btn button a{
+    color: #C5A481;
+}
+
+/* NEWS PART */
+.news_part{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.news{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* FOOTER PART */
+
+.footerpart{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footerLogo{
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_text{
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text .p17{
+    color: white;
+    font-size: 10px;
+
+}
+
+.footerItem{
+    flex-wrap: wrap;
+}
+
+/* FOOTER LAST PART */
+
+/* FOOTER LAST PART */
+
+.footerLast_list ul{
+    gap: 10px;
+}
+
+.footerLast_list ul li a{
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:767px) {
+    /* BANNER PART */
+
+    .logo1 img{
+        width: 80px;
+        height: 72px;
+    }
+
+    .logo2 img{
+        width: 120px;
+        height: 80px; 
+    }
+
+     .banner{
+        height: 360px;
+    }
+
+    .bannerLeft{
+        /* background-color: black; */
+        width: 35%;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center; 
+        position: absolute;
+        top: 23%;
+        left: 6%;
+        z-index: 10;
+    
+    }
+
+    .bannerLeft h3{
+        font-size: 18px;
+    }
+    
+    .bannerLeft h1{
+        font-size: 25px;
+    }
+    .bannerRight{
+        width: 65%;
+        height: 360px;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+    
+    .bannerRight .bannerHorse img{
+        height: 360px;
+    }
+
+    /* banner lower */
+
+.bannerlower .div1{
+    width: 120px;
+    height: 49px;
+}
+
+.bannerlower .div2{
+    width: 100px;
+    height: 34px;
+}
+
+/* NAV PART */
+
+.navitem{
+    height: auto;
+    padding: 10px;
+}
+
+.navlist{
+    gap: 30px;
+}
+
+.navlist li a{
+    font-size: 15px;
+}
+
+/* HORSE RACING PART */
+
+.horseracing_part{
+    height: 771px;
+}
+.horseracing{
+    flex-direction: column;
+    align-items: center;
+    /* height: 600px; */
+}
+
+.horseracing_left{
+    width: 80%;
+}
+
+.horseracing_right{
+    width: 100%;
+    padding: 0px 10px;
+    margin-top: 20px;
+}
+
+/* LEGACY PART */
+
+
+.legacy_text{
+    width: 80%;
+    position: absolute;
+    /* bottom: 5%; */
+    top: 20%;
+    left: 20%;
+    background-color: black;
+    height: 220px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.legacyImg{
+    position: absolute; 
+    bottom: 0%;
+    top: 5%;
+    height: 260px;
+    /* z-index: 6; */
+}
+
+.legacy_detail{
+    height: 380px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+.text{
+    width: 200px;
+    padding: 20px;
+}
+
+.legacy_text .p7{
+    font-size: 12px;
+    color: #C5A481;
+    margin-bottom: 15px;
+}
+
+.legacy_text .p8{
+    font-size: 12px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* LEGACY DETAIL2 */
+
+.legacy_detail2{
+    height: 380px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.legacy_text2{
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    background-color: black;
+    height: 220px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.legacyImg2{
+    position: absolute; 
+    top: 5%;
+    right: 0%;
+    height: 260px;
+}
+
+.legacy_text2 .p7{
+    font-size: 12px;
+    color: #C5A481;
+    margin-bottom: 15px;
+}
+
+.legacy_text2 .p8{
+    font-size: 12px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* LEGACY DETAIL 3 PART */
+
+.legacy_detail3{
+    height: 380px;
+    padding-top: 20px;
+    /* padding-bottom: 100px; */
+    position: relative;
+
+}
+
+
+.legacy_text3{
+    width: 80%;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    background-color: black;
+    height: 220px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.legacyImg3{
+    position: absolute; 
+    top: 0%;
+    left: 0%;
+    height: 260px;
+}
+
+.legacy_text3 .p7{
+    margin-bottom: 4px;
+}
+
+.legacy_text3 .p8{
+    margin-bottom: 4px;
+}
+
+/* LEGACY DETAIL 4 */
+
+.legacy_detail4{
+    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.legacy_text4{
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    background-color: black;
+    height: 210px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.legacyImg4{
+    height: 220px;
+    position: absolute; 
+    top: 5%;
+    right: 0%;
+}
+
+.text4{
+    width: 180px;
+}
+
+.legacy_text4 .p7{
+    color: #C5A481;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.legacy_text4 .p8{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+
+ /* WINNING HISTORY PART */
+
+ .winning_history{
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ .winner_detail_text{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #C5A481;
+    width: 80%;
+    height: 370px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner_horse_detail img{
+    /* height: 520px; */
+    height: 400px;
+}
+
+.winner_detail_text h6{
+    color: white;
+    margin-bottom: 10px;
+    font-family: "lora-medium",sans-serif;
+    font-size: 10px;
+}
+
+.winner_detail_text .p11{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hist_btn button{
+    width: 100px;
+    height: 33px;
+    background-color: rgba(60, 59, 59, 0.3);
+    border: 1px solid #C5A481;
+}
+
+.hist_btn button a{
+    font-size: 10px;
+}
+
+/* PRESTIGIOUS PART */
+
+.prestigious_part{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.prestigious{
+    height: 400px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.pres_shoes{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+    top: 8%;
+    right: 0%;
+}
+
+.pres_text{
+    width: 50%;
+    height: 250px;
+    padding: 20px;
+}
+
+.pres_text_heading{
+    width: 200px;
+}
+
+.pres_text_heading .p12{
+    color: white;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.pres_text_heading .p13{
+    color: #C5A481;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.pres_text_heading .p14{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.pres_btn button{
+    background-color: transparent;
+    border: none;
+}
+
+.pres_btn button a{
+    color: #C5A481;
+}
+
+
+/* NEWS PART */
+.news_part{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.news{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.news_heading h3{
+    font-size: 20px;
+}
+
+/* GALLERY PART */
+
+.gallery_part{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.gallery{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.gallery_heading_text{
+    width: 80%;
+    text-align: center;
+}
+
+/* TESTIMONIAL PART */
+
+.testimonial_part{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* FOOTER LAST PART */
+
+.footerLast_list ul{
+    gap: 10px;
+}
+
+.footerLast_list ul li a{
+    color: white;
+    font-size: 14px;
+}
+
+.footerLast_part{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+}
+
+@media screen and (max-width:576px) {
+    /* BANNER PART */
+
+     .logo1 img{
+        width: 50px;
+        height: 42px;
+    }
+
+    .logo2 img{
+        width: 100px;
+        height: 50px; 
+    }
+
+     .banner{
+        height: 250px;
+    }
+
+    .bannerLeft{
+        /* background-color: black; */
+        width: 35%;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center; 
+        position: absolute;
+        top: 23%;
+        left: 6%;
+        z-index: 10;
+    
+    }
+
+    .bannerLeft h3{
+        font-size: 8px;
+    }
+    
+    .bannerLeft h1{
+        font-size: 15px;
+    }
+    .bannerRight{
+        width: 65%;
+        height: 250px;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+    
+    .bannerRight .bannerHorse img{
+        height: 250px;
+    }
+
+    .logo3 img{
+        width: 40px;
+        height: 37px;
+    }
+
+    .logo4 img{
+        width: 25px;
+        height: 38px; 
+    }
+
+    .logo_text .p3,.p4{
+        font-size: 10px;
+    }
+
+    /* banner lower */
+
+.bannerlower .div1{
+    width: 100px;
+    height: 30px;
+}
+
+.bannerlower .div2{
+    width: 90px;
+    height: 26px;
+}
+
+.bannerlower .p1{
+    font-size: 8px;
+}
+
+.banner_lower_lowerpart .p2{
+    font-size: 6px;
+}
+
+/* NAV PART */
+
+.navpart{
+ 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navitem{
+    height: auto;
+    padding: 10px;
+}
+
+.navlist{
+    gap: 10px;
+}
+
+.navlist li a{
+    font-size: 8px;
+}
+
+/* HORSE RACING PART */
+.racingImg img{
+    height: 230px;
+}
+
+/* LEGACY PART */
+
+.legacy_text{
+    width: 80%;
+    position: absolute;
+    /* bottom: 5%; */
+    top: 20%;
+    left: 20%;
+    background-color: black;
+    height: 115px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.legacyImg{
+    position: absolute; 
+    bottom: 0%;
+    top: 5%;
+    height: 120px;
+    /* z-index: 6; */
+}
+
+.legacy_detail{
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+.text{
+    width: 160px;
+    padding: 20px;
+}
+
+.legacy_text .p7{
+    font-size: 8px;
+    color: #C5A481;
+    margin-bottom: 5px;
+}
+
+.legacy_text .p8{
+    font-size: 8px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+/* LEGACY DETAIL2 */
+
+.legacy_detail2{
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.legacy_text2{
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    background-color: black;
+    height: 115px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.legacyImg2{
+    position: absolute; 
+    top: 5%;
+    right: 0%;
+    height: 120px;
+}
+
+.legacy_text2 .p7{
+    font-size: 8px;
+    color: #C5A481;
+    margin-bottom: 5px;
+}
+
+.legacy_text2 .p8{
+    font-size: 8px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+/* LEGACY DETAIL 3 */
+
+.legacy_detail3{
+    height: 200px;
+    padding-top: 20px;
+    /* padding-bottom: 100px; */
+    position: relative;
+
+}
+
+
+.legacy_text3{
+    width: 80%;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    background-color: black;
+    height: 120px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.legacyImg3{
+    position: absolute; 
+    top: 0%;
+    left: 0%;
+    height: 130px;
+    
+}
+.text3{
+    width: 180px;
+    padding: 20px;
+}
+
+.legacy_text3 .p7{
+    color: #C5A481;
+    margin-bottom: 5px;
+    font-size: 8px;
+}
+
+.legacy_text3 .p8{
+    font-size: 8px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+/* LEGACY DETAIL 4 */
+
+.legacy_detail4{
+    height: 210px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.legacy_text4{
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.legacyImg4{
+    height: 100px;
+    position: absolute; 
+    top: 5%;
+    right: 0%;
+}
+
+.text4{
+    width: 130px;
+}
+
+.legacy_text4 .p7{
+    color: #C5A481;
+    margin-bottom: 2px;
+    font-size: 8px;
+}
+
+.legacy_text4 .p8{
+    color: white;
+    margin-bottom: 2px;
+    font-size: 8px;
+}
+
+ /* WINNING HISTORY PART */
+
+ .winner{
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ /* PRESTIGIOUS PART */
+
+.prestigious_part{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.prestigious{
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.pres_shoes{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+    top: 8%;
+    right: 0%;
+}
+
+.pres_text{
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+}
+
+.pres_text_heading{
+    width: 100px;
+}
+
+.pres_text_heading .p12{
+    color: white;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.pres_text_heading .p13{
+    color: #C5A481;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.pres_text_heading .p14{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 6px;
+}
+
+.pres_btn button{
+    background-color: transparent;
+    border: none;
+}
+
+.pres_btn button a{
+    color: #C5A481;
+    font-size: 8px;
+}
+
+/* NEWS PART */
+.news_part{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.news{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.news_type{
+    flex-direction: column;
+}
+
+.news_detail{
+    width: 100%;
+    padding: 5px;
+}
+
+.news_heading h3{
+    font-size: 20px;
+}
+
+/* GALLERY PART */
+
+.gallery_part{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gallery{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.gallery_heading{
+    margin-bottom: 30px;
+}
+
+.gallery_heading_text{
+    width: 80%;
+    text-align: center;
+}
+
+.gallery_heading_text h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.gallery_Imagepart{
+    flex-direction: column;
+}
+
+.gallery_part .Image1,.Image2,.Image3,.Image4{
+    padding: 10px;
+    height: 400px;
+}
+
+.gallery_btn button{
+    width: 150px;
+    height: 43px;
+    margin-top: 30px;
+}
+
+/* TESTIMONIAL PART */
+
+.testimonial_part{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.testimonial{
+    flex-wrap: wrap;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+}
